@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+/* .logo img {
+
+    max-width: 120px;
+    height: auto;
+} */
+.vv {
+    padding-bottom: 10px;
+    text-shadow: 4px 6px 4px #3a7eac;
+
+}
+
+.vvv {
+    padding-bottom: 10px;
+    text-shadow: 4px 6px 4px #3a7eac;
+}
+
+.vvv span {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px 2px #3a7eac;
+}
+
+.navmenu {
+    margin: auto;
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 7px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: crimson;
+}
+
+.navicon {
+    display: flex;
+    align-items: center;
+}
+
+.navicon i {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navicon i:hover {
+    transition: scale(1.1);
+    color: crimson;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+section {
+    padding: 8% 12%;
+}
+
+.main-home {
+    height: 100vh;
+    width: 100%;
+    background-image: url("banner-3.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5 {
+    color: #ee1c47;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.main-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin: 6px 0 10px;
+}
+
+.main-text p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #111;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    transition: all .42s ease;
+    padding: 12px 25px;
+}
+
+.main-btn:hover {
+    background-color: #111;
+    color: white;
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down i {
+    font-size: 20px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover {
+    background-color: #2c2c2c;
+    color: white;
+    transition: all .42s ease;
+
+}
+
+header.sticky {
+    color: white;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0/10%);
+}
+
+/* Trending Section css */
+
+.centre-text h2 {
+    color: #111;
+    text-transform: capitalize;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.centre-text span {
+    color: #ee1c47;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.product-test h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(44, 218, 44);
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon {
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+}
+
+.heart-icon:hover {
+    color: #ee1c47;
+}
+
+.rating i {
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.client-review {
+    background-color: #f3f4f6;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h3 {
+    color: #111;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.reviews img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0px;
+}
+
+.reviews p {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews h2 {
+    color: #111;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/* Update section CSS */
+.up-center-text h2 {
+    color: #111;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.cart img {
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.update-cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    gap: 1.5rem;
+}
+
+.cart h5 {
+    color: #636872;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.cart h5 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+.cart p {
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.cart h6 {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f3f4f6;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 2rem;
+}
+
+.vvv {
+    /* width: 140px; */
+    /* height: auto; */
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+}
+
+.vvv span {
+    font-size: 50px;
+}
+
+.contact-info h4 {
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all .42s;
+
+}
+
+.contact-info p:hover {
+    color: #ee1c47;
+}
+
+.social-icon i {
+    color: #565656;
+    right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.5);
+}
+
+.end-text {
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p {
+    color: black;
+    text-transform: capitalize;
+}
